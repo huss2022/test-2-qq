@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لعبة الأسئلة العربية</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="game-container">
+        <div id="message-container"></div>
+        <h1 id="level-title">المستوى 1</h1>
+        
+        <!-- شريط التقدم -->
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar"></div>
+        </div>
+
+        <!-- السؤال والخيارات -->
+        <p id="question"></p>
+        <div id="options-container"></div>
+
+        <!-- معلومات اللاعب -->
+        <div id="player-info">
+            <p id="score">النقاط: 0</p>
+            <div id="attempts">
+                <span class="attempt-dot"></span>
+                <span class="attempt-dot"></span>
+                <span class="attempt-dot"></span>
+            </div>
+        </div>
+
+        <!-- زر إعادة التشغيل -->
+        <button id="restart-btn" onclick="restartGame()">إعادة التشغيل</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
